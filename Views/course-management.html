@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course management</title>
+
+    <style>
+        .course-management {
+            width: 60%;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          .course-management h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+          }
+          
+          .course-management label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+          }
+          
+          .course-management input,
+          .course-management textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          .course-management button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+    </style>
+
+</head>
+<body>
+    <div class="course-management">
+        <h2>Create a New Course</h2>
+        <form id="create-course-form">
+          <label for="course-title">Course Title:</label>
+          <input type="text" id="course-title" name="course-title" required />
+      
+          <label for="course-description">Course Description:</label>
+          <textarea id="course-description" name="course-description" required></textarea>
+      
+          <label for="course-price">Course Price:</label>
+          <input type="number" id="course-price" name="course-price" required />
+      
+          <label for="course-content">Add Course Content:</label>
+          <input type="file" id="course-content" name="course-content" multiple />
+      
+          <button type="submit">Publish Course</button>
+        </form>
+      </div>
+      
+</body>
+</html>

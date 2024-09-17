@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resources</title>
+
+    <style>
+
+        .resource-management {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+          }
+          
+          .resource-management form input,
+          .resource-management form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+          
+          .uploaded-resources ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          .uploaded-resources li {
+            padding: 8px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="resource-management">
+        <h2>Upload Course Resources</h2>
+        <form id="upload-resource-form">
+          <label for="resource-file">Choose Resource:</label>
+          <input type="file" id="resource-file" name="resource-file" required />
+          <button type="submit">Upload Resource</button>
+        </form>
+      
+        <div class="uploaded-resources">
+          <h3>Uploaded Resources:</h3>
+          <ul>
+            <li>Lesson 1 - Introduction to Programming</li>
+            <li>Lesson 2 - Advanced .Net</li>
+          </ul>
+        </div>
+      </div>
+      
+</body>
+</html>

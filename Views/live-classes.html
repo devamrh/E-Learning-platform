@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live class</title>
+
+    <style>
+
+        .schedule-live-class {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+          }
+          
+          .schedule-live-class h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+          
+          .schedule-live-class form input,
+          .schedule-live-class form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+          }
+          
+          .schedule-live-class button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="schedule-live-class">
+        <h2>Schedule Live Class</h2>
+        <form id="schedule-class-form">
+          <label for="class-date">Date:</label>
+          <input type="date" id="class-date" name="class-date" required />
+      
+          <label for="class-time">Time:</label>
+          <input type="time" id="class-time" name="class-time" required />
+      
+          <label for="class-duration">Duration (in minutes):</label>
+          <input type="number" id="class-duration" name="class-duration" required />
+      
+          <button type="submit">Schedule Class</button>
+        </form>
+      </div>
+      
+</body>
+</html>
